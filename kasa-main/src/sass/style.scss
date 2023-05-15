@@ -1,0 +1,25 @@
+/*****SASS 7-1 PATTERN*****/
+
+// Import Utils
+@import "./utils/variables.scss";
+@import "./utils/mixins";
+
+// Import Base
+@import "./base/base.scss";
+@import "./base/typography.scss";
+
+// Import Components
+@import "./components/banner.scss";
+@import "./components/cards.scss";
+@import "./components/carousel.scss";
+@import "./components/collapse.scss";
+
+// Import Layout 
+@import "./layout/header.scss";
+@import "./layout/footer.scss";
+
+// Import Page
+@import './pages/home.scss';
+@import './pages/about.scss';
+@import './pages/errorpage.scss';
+@import './pages/logement.scss';

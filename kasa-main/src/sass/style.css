@@ -1,0 +1,39 @@
+/*****SASS 7-1 PATTERN*****/ /*****Colors*****/
+/*****Breakpoints*****/
+/*****Responsive*****/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500&display=swap");
+* {
+  box-sizing: border-box;
+  font-family: "Montserrat";
+}
+
+body {
+  width: 100%;
+  margin: 0;
+}
+
+.footer {
+  position: absolute;
+  right: 0;
+  width: 100%;
+  background: #000;
+  height: 209px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+.footer__logo {
+  margin-top: 4%;
+}
+.footer__info {
+  color: #fff;
+  font-weight: 500;
+  font-size: 20px;
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .footer__info {
+    font-size: 12px;
+  }
+}/*# sourceMappingURL=style.css.map */
