@@ -1,5 +1,5 @@
 import logo from "../logo.svg";
-import "../styles/Home.css";
+import "../sass/home.css";
 
 function Home() {
   return (
@@ -7,7 +7,7 @@ function Home() {
       <header className="Home-header">
         <img src={logo} className="Home-logo" alt="logo" />
         <p>
-          Edit <code>src/pages/Home.jsx</code> and save to reload.
+          Edit <code>src/pages/home.jsx</code> and save to reload.
         </p>
         <a
           className="Home-link"
