@@ -1,0 +1,25 @@
+.cards {
+    width: 100%;
+    height: 255px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 22px;
+    border-radius: 10px;
+    overflow: hidden;
+    background: linear-gradient(180deg, #FF6060, #FF6060, #FF6060, #833131);
+
+    &__img {
+        width: 100%;
+        height: 75%;
+        object-fit: cover;
+        border-radius: 10px 10px 0px 0px;
+    }
+
+    &__title {
+        font-size: 15px;
+        font-weight: 500;
+        color: $white;
+        width: 55%;
+        margin: 13px;
+    }
+}
