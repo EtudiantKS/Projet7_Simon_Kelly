@@ -1,0 +1,39 @@
+.collapse {
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+
+
+
+    &__button {
+        color: $secondary-color;
+        width: 93%;
+        border: none;
+        border-radius: 5px;
+        background-color: $primary-color;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 47px;
+        font-size: 13px;
+        padding: 0 20px;
+        cursor: pointer;
+    }
+
+
+    &__img {
+        width: 16px;
+        height: 10px;
+    }
+
+    &__info {
+        width: 93%;
+        background-color: $secondary-color;
+        color: $primary-color;
+        font-size: 12px;
+        padding: 21px 11px 52px 11px;
+    }
+
+}

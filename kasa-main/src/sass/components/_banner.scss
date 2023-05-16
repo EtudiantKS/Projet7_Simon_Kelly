@@ -1,7 +1,7 @@
 .banner {
     height: 111px;
     position: relative;
-    margin: 22px 15px 20px 15px;
+    margin: 20px 15px 20px 15px;
     border-radius: 10px;
     overflow: hidden;
 
@@ -33,4 +33,8 @@
         width: 100%;
         border-radius: 10px;
     }
+}
+
+.about__banner>.banner {
+    height: 223px;
 }
