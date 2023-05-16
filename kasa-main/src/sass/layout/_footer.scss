@@ -1,6 +1,4 @@
 .footer {
-    position: absolute;
-    right: 0;
     width: 100%;
     background: $black;
     height: 209px;
@@ -18,9 +16,5 @@
         color: $white;
         font-weight: 500;
         font-size: 20px;
-
-        @include media-inter($mobile, $tablet) {
-            font-size: 12px;
-        }
     }
 }

@@ -1,0 +1,35 @@
+.error {
+    color: $primary-color;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        height: 523px;
+    }
+
+    &__number {
+        font-weight: 700;
+        font-size: 96px;
+
+    }
+
+    &__text {
+        font-size: 18px;
+        font-weight: 500;
+        width: 260px;
+    }
+
+    &__link {
+        color: $primary-color;
+        font-size: 14px;
+        margin-top: 75px;
+        text-decoration: underline;
+    }
+}
