@@ -47,7 +47,7 @@ function Logement() {
                 </div>
 
                 {/* div pour les infos du propriété et des étoiles  */}
-                <div className='product__host&rating'>
+                <div className='product__host-rating'>
                     {/* Affichage du nom du propriétaire et sa photo */}
                     <div className='product__host'>
                         <p>{host.name}</p>
