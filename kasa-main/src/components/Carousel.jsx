@@ -43,10 +43,10 @@ function Carousel({ pictures }) {
             {/* Si le logement a plusvd'une image, Alors on affiche les flèches et le compteur */}
             {totalPictures > 1 ? (
                 <div className='carousel__chevron'>
-                    <button onClick={prevSlide}>
+                    <button onClick={prevSlide} className='carousel__chevron--button'>
                         <img src={chevron_Gauche} alt="flèche gauche" className="carousel__left" />
                     </button>
-                    <button onClick={nextSlide}>
+                    <button onClick={nextSlide} className='carousel__chevron--button'>
                         <img src={chevron_Droit} alt="flèche droit" className="carousel__rigth" />
                     </button>
                     <span className="carousel__counter">
