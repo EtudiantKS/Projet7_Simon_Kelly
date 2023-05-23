@@ -114,6 +114,18 @@ a {
   overflow: hidden;
   background: linear-gradient(180deg, #FF6060, #FF6060, #FF6060, #833131);
 }
+@media screen and (min-width: 768px) {
+  .cards {
+    width: 340px;
+    height: 340px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .cards {
+    width: 340px;
+    height: 340px;
+  }
+}
 .cards__img {
   width: 100%;
   height: 75%;
@@ -127,6 +139,18 @@ a {
   color: #fff;
   width: 55%;
   margin: 13px;
+}
+@media screen and (min-width: 768px) {
+  .cards__title {
+    font-size: 15px;
+    width: 80%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .cards__title {
+    font-size: 18px;
+    width: 70%;
+  }
 }
 
 .carousel {
@@ -289,11 +313,13 @@ a {
 @media screen and (min-width: 768px) {
   .navbar__link {
     width: 37%;
+    text-transform: none;
   }
 }
 @media screen and (min-width: 992px) {
   .navbar__link {
     width: 25%;
+    text-transform: none;
   }
 }
 .navbar__link--active, .navbar__link--inactive {
@@ -352,6 +378,32 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .home__gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    background-color: #f7f7f7;
+    padding: 30px 10px 30px 10px;
+    border-radius: 0px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .home__gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    width: 1240px;
+    margin: 40px 315px 40px 315px;
+    background-color: #f7f7f7;
+    padding: 30px 10px 30px 10px;
+    border-radius: 25px;
+  }
 }
 
 .about__info {

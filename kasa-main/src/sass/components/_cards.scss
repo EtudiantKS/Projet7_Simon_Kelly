@@ -7,6 +7,17 @@
     overflow: hidden;
     background: linear-gradient(180deg, #FF6060, #FF6060, #FF6060, #833131);
 
+
+    @include media-min($tablet) {
+        width: 340px;
+        height: 340px;
+    }
+
+    @include media-min($desktop) {
+        width: 340px;
+        height: 340px;
+    }
+
     &__img {
         width: 100%;
         height: 75%;
@@ -20,5 +31,15 @@
         color: $white;
         width: 55%;
         margin: 13px;
+
+        @include media-min($tablet) {
+            font-size: 15px;
+            width: 80%;
+        }
+
+        @include media-min($desktop) {
+            font-size: 18px;
+            width: 70%;
+        }
     }
 }

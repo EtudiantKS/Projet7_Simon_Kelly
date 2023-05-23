@@ -40,10 +40,12 @@
 
         @include media-min($tablet) {
             width: 37%;
+            text-transform: none;
         }
 
         @include media-min($desktop) {
             width: 25%;
+            text-transform: none;
         }
 
         &--active,
