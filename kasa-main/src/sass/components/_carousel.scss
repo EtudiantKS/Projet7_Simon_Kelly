@@ -1,6 +1,7 @@
 .carousel {
     display: flex;
     align-items: center;
+    justify-content: center;
     height: 255px;
     margin: 0px 20px 0px;
 
@@ -14,38 +15,38 @@
 
     &__chevron {
         display: flex;
-        width: 100%;
+        position: absolute;
+        justify-content: space-between;
+        width: 84%;
 
         &--button {
             border: none;
             background-color: transparent;
             padding: 0;
+            height: 20px;
+            cursor: pointer;
+            filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.2));
         }
     }
 
     &__left {
-        position: absolute;
-        right: 90%;
-        height: 20px;
-        top: 25%;
+        height: 100%;
+
 
     }
 
     &__rigth {
-        position: absolute;
-        right: 7%;
-        height: 20px;
-        top: 25%;
+        height: 100%;
 
     }
 
     &__counter {
         color: $white;
         position: absolute;
-        bottom: 60%;
-        left: 46%;
-        right: 46%;
-        font-size: 14px;
+        top: 110px;
+        left: 45%;
+        right: 45%;
+        font-size: 12px;
         font-weight: 500;
 
     }

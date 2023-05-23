@@ -12,6 +12,10 @@ import ErrorPage from '../pages/ErrorPage';
 import Header from "../layout/Header";
 import Footer from "../layout/Footer";
 
+// on importe les étoiles 
+import Starred from '../assets/star-red.svg';
+import Stargrey from '../assets/star-grey.svg';
+
 
 //Constant pour le tableau des étoiles (rating)
 const stars = [1, 2, 3, 4, 5]
@@ -40,8 +44,8 @@ function Logement() {
                     <h1 className="product__title">{title}</h1>
                     <p className="product__location">{location}</p>
                     <div className="product__tags">
-                        {product.tags.map((element, index) => {
-                            return (<p className='tags' key={"tags" + index}> {element}</p>)
+                        {product.tags.map((element) => {
+                            return (<p className='tags' key={"tags"}>{element}</p>)
                         })}
                     </div>
                 </div>
@@ -56,10 +60,22 @@ function Logement() {
                     {/* Affichage et couleurs des étoiles */}
                     <div className='product__rating'>
                         {
-                            stars.map(element => {
-                                const nbreEtoiles = parseInt(rating)
-                                return (<span key={"rating"} className={element <= nbreEtoiles ? 'span1' : 'span2'}>★</span>)
-                            })
+                            stars.map((star) =>
+                                rating >= star ? (
+                                    <img
+                                        key={star.toString()}
+                                        className="product__rating--star"
+                                        src={Starred}
+                                        alt="étoile rouge"
+                                    />) : (
+                                    <img
+                                        key={star.toString()}
+                                        className="product__rating--star"
+                                        src={Stargrey}
+                                        alt="étoile grise"
+                                    />
+                                )
+                            )
                         }
                     </div>
                 </div>
@@ -70,7 +86,7 @@ function Logement() {
                 <Collapse title="Équipements" content={equipments} />
             </div>
             <Footer />
-        </section>
+        </section >
     );
 };
 

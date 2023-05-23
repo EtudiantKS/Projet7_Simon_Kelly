@@ -18,7 +18,7 @@
         align-items: center;
         height: 47px;
         font-size: 13px;
-        padding: 0 20px;
+        padding: 0 10px;
         cursor: pointer;
     }
 
@@ -33,7 +33,18 @@
         background-color: $secondary-color;
         color: $primary-color;
         font-size: 12px;
-        padding: 21px 11px 52px 11px;
+        font-weight: 400;
+        margin: 0;
+        font-weight: 400;
     }
+
+    &__list {
+
+        display: inline-block;
+        font-size: 12px;
+        padding: 0px 7px 24px 11.5px
+    }
+
+
 
 }

@@ -22,14 +22,19 @@ function Collapse({ title, content }) {
             </button>
             {open && (
                 <div className="collapse__info">
-                    <p>{content}</p>
+                    <ul className="collapse__list">
+                        {Array.isArray(content) ? ( // si les informations sont sous forme de tableau
+                            content.map((equipment) => (
+                                <li className="collapse__list-element"> {equipment} </li> // alors on affiche sous forme de li 
+                            ))
+                        ) : (
+                            <p className="collapse__text">{content}</p> // sinon on affiche les informations dans un paragraphe
+                        )}
+                    </ul>
                 </div>
             )}
         </div>
     );
 }
 
-
 export default Collapse
-
-
