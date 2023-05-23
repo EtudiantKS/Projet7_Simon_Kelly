@@ -172,26 +172,67 @@ a {
   justify-content: space-between;
   margin: 20px;
 }
+@media screen and (min-width: 768px) {
+  .navbar {
+    margin: 30px 50px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .navbar {
+    height: 40px 100px;
+  }
+}
 .navbar__img {
   height: 48px;
 }
 .navbar__img:hover {
   cursor: pointer;
 }
+@media screen and (min-width: 768px) {
+  .navbar__img {
+    height: 50px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .navbar__img {
+    height: 53px;
+  }
+}
 .navbar__link {
-  width: 38%;
+  width: 50%;
   display: flex;
   justify-content: space-around;
   text-transform: uppercase;
   font-size: 12px;
 }
+@media screen and (min-width: 768px) {
+  .navbar__link {
+    width: 37%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .navbar__link {
+    width: 40%;
+  }
+}
 .navbar__link--active, .navbar__link--inactive {
   width: 50%;
   color: #ff6060;
   display: flex;
+  justify-content: flex-end;
   align-items: center;
   font-weight: 500;
   text-decoration: underline;
+}
+@media screen and (min-width: 768px) {
+  .navbar__link--active, .navbar__link--inactive {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .navbar__link--active, .navbar__link--inactive {
+    font-size: 24px;
+  }
 }
 .navbar__link--inactive {
   text-decoration: none;
@@ -213,7 +254,17 @@ a {
 .footer__info {
   color: #fff;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 12px;
+}
+@media screen and (min-width: 768px) {
+  .footer__info {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .footer__info {
+    font-size: 24px;
+  }
 }
 
 .home__gallery {
@@ -238,20 +289,57 @@ a {
   justify-content: center;
   height: 523px;
 }
+@media screen and (min-width: 768px) {
+  .error__info {
+    height: 1025px;
+  }
+}
 .error__number {
   font-weight: 700;
   font-size: 96px;
 }
+@media screen and (min-width: 768px) {
+  .error__number {
+    font-size: 200px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .error__number {
+    font-size: 288px;
+  }
+}
 .error__text {
   font-size: 18px;
   font-weight: 500;
-  width: 260px;
+  width: 60%;
+}
+@media screen and (min-width: 768px) {
+  .error__text {
+    font-size: 28px;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .error__text {
+    font-size: 36px;
+    width: 100%;
+  }
 }
 .error__link {
   color: #ff6060;
   font-size: 14px;
   margin-top: 75px;
   text-decoration: underline;
+}
+@media screen and (min-width: 768px) {
+  .error__link {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .error__link {
+    font-size: 18px;
+  }
 }
 
 .product {

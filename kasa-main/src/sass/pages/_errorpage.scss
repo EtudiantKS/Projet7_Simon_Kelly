@@ -2,24 +2,49 @@
     color: $primary-color;
     text-align: center;
 
+
+
     &__info {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         height: 523px;
+
+        @include media-min($tablet) {
+            height: 1025px;
+        }
     }
 
     &__number {
         font-weight: 700;
         font-size: 96px;
 
+
+        @include media-min($tablet) {
+            font-size: 200px;
+        }
+
+        @include media-min($desktop) {
+            font-size: 288px;
+        }
+
     }
 
     &__text {
         font-size: 18px;
         font-weight: 500;
-        width: 260px;
+        width: 60%;
+
+        @include media-min($tablet) {
+            font-size: 28px;
+            width: 100%;
+        }
+
+        @include media-min($desktop) {
+            font-size: 36px;
+            width: 100%;
+        }
     }
 
     &__link {
@@ -27,5 +52,13 @@
         font-size: 14px;
         margin-top: 75px;
         text-decoration: underline;
+
+        @include media-min($tablet) {
+            font-size: 18px;
+        }
+
+        @include media-min($desktop) {
+            font-size: 18px;
+        }
     }
 }
