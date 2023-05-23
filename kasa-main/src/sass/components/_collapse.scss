@@ -1,5 +1,5 @@
 .collapse {
-    margin-bottom: 25px;
+    margin-bottom: 20px;
     display: flex;
     justify-content: space-around;
     flex-direction: column;
@@ -16,23 +16,41 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        height: 47px;
+        height: 30px;
         font-size: 13px;
         padding: 0 10px;
         cursor: pointer;
+
+        @include media-min($tablet) {
+            font-size: 20px;
+        }
+
+        @include media-min($desktop) {
+            font-size: 24px;
+            height: 47px;
+        }
     }
 
 
     &__img {
         width: 16px;
         height: 10px;
+
+        @include media-min($tablet) {
+            width: 22px;
+            height: 12px;
+        }
+
+        @include media-min($desktop) {
+            width: 24px;
+            height: 14px
+        }
     }
 
     &__info {
         width: 93%;
         background-color: $secondary-color;
         color: $primary-color;
-        font-size: 12px;
         font-weight: 400;
         margin: 0;
         font-weight: 400;
@@ -42,7 +60,18 @@
 
         display: inline-block;
         font-size: 12px;
-        padding: 0px 7px 24px 11.5px
+        padding: 0px 7px 24px 11.5px;
+
+        @include media-min($tablet) {
+            font-size: 20px;
+        }
+
+        @include media-min($desktop) {
+            font-size: 24px;
+            padding: 0px 25px 24px 25px;
+            line-height: 34px;
+            margin: 0;
+        }
     }
 
 
