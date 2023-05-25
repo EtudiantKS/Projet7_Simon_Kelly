@@ -1,6 +1,6 @@
 import React from 'react';
 
-// Cards récupère 2 proprités => image & title
+// Cards récupère 2 props => image & title
 function Cards({ image, title }) {
     return (
         <div className="cards">
