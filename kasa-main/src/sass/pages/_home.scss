@@ -4,8 +4,9 @@
         flex-direction: column;
         justify-content: center;
 
+
+
         @include media-min($tablet) {
-            display: flex;
             flex-wrap: wrap;
             justify-content: space-around;
             align-items: center;
@@ -13,19 +14,18 @@
             background-color: $secondary-color;
             padding: 30px 10px 30px 10px;
             border-radius: 0px;
+
         }
 
         @include media-min($desktop) {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            align-items: center;
-            flex-direction: row;
-            width: 1240px;
-            margin: 40px 315px 40px 315px;
-            background-color: $secondary-color;
-            padding: 30px 10px 30px 10px;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(365px, 1fr));
+            justify-items: center;
             border-radius: 25px;
+            margin: 40px 30px 40px 30px;
+            padding: 30px 50px;
         }
+
+
     }
 }

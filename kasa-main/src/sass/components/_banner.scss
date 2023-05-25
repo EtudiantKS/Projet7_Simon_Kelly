@@ -6,12 +6,12 @@
     overflow: hidden;
 
     @include media-min($tablet) {
-        margin: 20px 50px 20px 50px;
+        margin: $margin;
     }
 
     @include media-min($desktop) {
-        margin: 20px 45px 20px 45px;
         height: 223px;
+        margin: $margin;
     }
 
     &__img {
@@ -50,8 +50,8 @@
 
         @include media-min($desktop) {
             font-size: 48px;
-            right: 30%;
-            left: 30%;
+            right: 25%; //modif
+            left: 25%; //modif
             top: 26%
         }
     }

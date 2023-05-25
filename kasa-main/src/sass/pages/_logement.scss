@@ -7,6 +7,11 @@
         display: flex;
         flex-direction: column;
         margin: 20px;
+
+        @include media-min($desktop) {
+            flex-direction: row;
+            justify-content: space-between;
+        }
     }
 
 
@@ -14,6 +19,14 @@
         margin: 0;
         font-size: 18px;
         font-weight: 500;
+
+        @include media-min($tablet) {
+            font-size: 25px;
+        }
+
+        @include media-min($desktop) {
+            font-size: 36px;
+        }
     }
 
 
@@ -22,6 +35,14 @@
         font-weight: 500;
         margin-top: 5px;
         margin-bottom: 10px;
+
+        @include media-min($tablet) {
+            font-size: 16px;
+        }
+
+        @include media-min($desktop) {
+            font-size: 18px;
+        }
 
     }
 
@@ -41,6 +62,18 @@
         padding: 3px;
         width: 84px;
         height: 18px;
+
+        @include media-min($tablet) {
+            font-size: 14px;
+            width: 100px;
+            height: 23px;
+        }
+
+        @include media-min($desktop) {
+            font-size: 14px;
+            width: 115px;
+            height: 25px;
+        }
     }
 
 
@@ -49,7 +82,11 @@
         justify-content: space-between;
         align-items: center;
         flex-direction: row-reverse;
-        width: 100%;
+
+        @include media-min($desktop) {
+            flex-direction: column;
+            align-items: flex-end;
+        }
     }
 
     &__host {
@@ -57,6 +94,10 @@
         align-items: center;
         width: 29%;
         justify-content: flex-end;
+
+        @include media-min($desktop) {
+            width: 9%;
+        }
     }
 
     &__host p {
@@ -64,6 +105,14 @@
         margin: 0px 10px;
         text-align: right;
         font-weight: 500;
+
+        @include media-min($tablet) {
+            font-size: 16px;
+        }
+
+        @include media-min($desktop) {
+            font-size: 18px;
+        }
     }
 
 
@@ -72,6 +121,16 @@
         height: 32px;
         border-radius: 50%;
         object-fit: cover;
+
+        @include media-min($tablet) {
+            width: 54px;
+            height: 54px;
+        }
+
+        @include media-min($desktop) {
+            width: 64px;
+            height: 64px;
+        }
     }
 
 
@@ -81,10 +140,82 @@
         justify-content: space-between;
         width: 26%;
 
+        @include media-min($tablet) {
+            width: 14%;
+        }
+
+        @include media-min($desktop) {
+            width: 100%;
+            margin: 20px 0px;
+        }
+
 
         &--star {
             width: 13.41px;
             height: 13px;
+
+            @include media-min($tablet) {
+                width: 18.75px;
+                height: 18px;
+            }
+
+            @include media-min($desktop) {
+                width: 24.75px;
+                height: 24px;
+            }
         }
     }
+
+    &__collapse {
+        @include media-min($tablet) {
+            min-height: 515px;
+
+            &>div {
+                &>button {
+                    font-size: 15px;
+                    border-radius: 10px;
+                }
+
+                &>div.collapse__content {
+                    border-radius: 0 0 10px 10px;
+                    padding: 15px 0;
+
+                    &>p,
+                    ul {
+                        font-size: 15px;
+                        line-height: 25, 67px;
+                    }
+                }
+            }
+        }
+
+        @include media-min($desktop) {
+            display: grid;
+            grid-template-columns: repeat(2, 50%);
+            align-items: start;
+
+            &>div {
+                &>button {
+                    font-size: 18px;
+                    border-radius: 10px;
+                    width: 96%;
+
+                }
+
+                &>div.collapse__info {
+                    border-radius: 0 0 10px 10px;
+                    padding: 35px 0;
+                    height: 300px;
+                    width: 96%;
+
+                    &>p,
+                    ul {
+                        font-size: 18px;
+                        line-height: 25, 67px;
+                    }
+                }
+            }
+        }
+    }
+
 }
